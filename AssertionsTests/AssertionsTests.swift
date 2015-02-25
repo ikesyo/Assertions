@@ -16,23 +16,23 @@ final class AssertionsTests: XCTestCase {
 //		XCTAssertEqual(string, "hello") // => error: cannot find an overload for 'XCTAssertEqual' that accepts an argument list of type '(String?, String)'
 	}
 
-	func testAssertingWithMethods() {
-		let set: Set<Int>? = Set([1, 2, 3])
-		assert(set, Set.contains, 3)
-	}
+//	func testAssertingWithMethods() {
+//		let set: Set<Int>? = Set([1, 2, 3])
+//		assert(set, Set.contains, 3)
+//	}
 
 	func testAssertingPropertyWithPredicate() {
 		let string: String? = ""
 		assert(string, { $0.isEmpty })
 	}
 
-	func testAssertingNilOfEquatableType() {
-		let x: Int? = nil
-		assert(x, ==, nil)
-	}
-
-	func testAssertingNonNilOfEquatableType() {
-		let x: Int? = 1
-		assert(x, !=, nil)
-	}
+//	func testAssertingNilOfEquatableType() {
+//		let x: Int? = nil
+//		assert(x, ==, nil)
+//	}
+//
+//	func testAssertingNonNilOfEquatableType() {
+//		let x: Int? = 1
+//		assert(x, !=, nil)
+//	}
 }
